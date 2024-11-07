@@ -1,0 +1,124 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root {
+  --color-blanco: white;
+  --primario: #000c18;
+  --secundario: #033047;
+  --terciario: #24a6c4;
+  --fuente-bebas: "Bebas Neue", sans-serif;
+}
+
+body{
+  font-family: var(--fuente-bebas);
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+/*Header*/
+
+
+/*Main*/
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__section__form__p{
+  display: grid;
+  place-items: center;
+}
+.main__section__form__p p{
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--color-blanco);
+}
+
+.main__section{
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.main__section__form{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.main__section__form__div{
+  display: flex;
+  flex-direction: column;
+}
+
+.main__section__form__div__label{
+  color: var(--color-blanco);
+  font-size: 1.5rem;
+}
+
+.main__section__form__div__input{
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: var(--fuente-bebas);
+  letter-spacing: 1px;
+  font-family: 1rem;
+}
+.main__section__form__button{
+  display: grid;
+  place-items: center;
+}
+.main__section__form__div__button{
+  font-size: 1.5rem;
+  font-family: var(--fuente-bebas);
+  width: fit-content;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/*Footer*/
+
+
+/*div del logo*/
+.div{
+  position: absolute;
+  left: 90%;
+  bottom: 75%;
+}
+
+.div__img {
+  padding: 1rem;
+  margin: 0;
+}
+
+/*Video*/
+/* Estilos para el video de fondo */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.video-background video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Hace que el video llene el contenedor y mantenga su proporción */
+}
+
+/* Estilos para el contenido sobre el video */
+.contenido {
+  position: relative;
+  z-index: 1; /* Coloca el contenido encima del video */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,157 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --color-blanco: white;
+  --primario: #000c18;
+  --secundario: #033047;
+  --terciario: #24a6c4;
+  --fuente-bebas: "Bebas Neue", sans-serif;
+}
+
+body {
+  font-family: var(--fuente-bebas);
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+}
+
+/*Header*/
+
+/* .header{
+  position: absolute;
+  left: 90%;
+
+}
+
+.header__img{
+  padding: 1rem;
+  margin: 0;
+} */
+/*Main*/
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div{
+  position: absolute;
+  left: 90%;
+  bottom: 75%;
+}
+
+.div__img {
+  padding: 1rem;
+  margin: 0;
+}
+
+.main__section {
+  padding: 1rem;
+  width: 25%;
+  background-color: rgba(37, 3, 36, 0.5);
+  border-radius: 0.5rem;
+}
+
+.main__section__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__section__form__titulo {
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  color: var(--color-blanco);
+}
+.main__section__form__titulo p {
+  margin: 0;
+}
+
+.main__section__form__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__section__form__div__label {
+  font-size: 1.5rem;
+  color: var(--color-blanco);
+}
+
+.main__section__form__div__input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: var(--fuente-bebas);
+  letter-spacing: 1px;
+  font-family: 1rem;
+}
+
+.main__section__form__p {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+.main__section__form__div__p {
+  color: var(--color-blanco);
+  margin: 0;
+  font-size: 1.3rem;
+}
+.main__section__form__p a {
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+/*Button*/
+.main__section__form__button {
+  display: grid;
+  place-items: center;
+}
+
+.main__section__form__div__button {
+  font-size: 1.5rem;
+  font-family: var(--fuente-bebas);
+  width: fit-content;
+  height: 30px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/*Footer*/
+
+.footer{
+  margin-bottom: 10px;
+}
+
+
+/*Video*/
+/* Estilos para el video de fondo */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.video-background video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Hace que el video llene el contenedor y mantenga su proporción */
+}
+
+/* Estilos para el contenido sobre el video */
+.contenido {
+  position: relative;
+  z-index: 1; /* Coloca el contenido encima del video */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/*Resposividad*/
